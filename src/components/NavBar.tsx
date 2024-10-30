@@ -12,6 +12,7 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
+import { DialogTitle } from "@radix-ui/react-dialog";
 
 export default function NavBar() {
   return (
@@ -50,16 +51,17 @@ export default function NavBar() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-xl">
+                <NavigationMenuTrigger className="text-xl font-semibold">
                   Services
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
+                  <h3 className="text-lg font-semibold"></h3>
                   <ul className="flex flex-col gap-5 p-6 md:w-[300px] lg:w-[300px] text-[#004a82]">
                     <li className=" hover:underline">
-                      <a>Interior panting</a>
+                      <a>Interior painting</a>
                     </li>
                     <li className=" hover:underline">
-                      <a>Exterior panting</a>
+                      <a>Exterior painting</a>
                     </li>
                     <li className=" hover:underline">
                       <a>Commercial painting</a>
@@ -115,11 +117,43 @@ const MobileNav = () => {
         </Button>
       </SheetTrigger>
       <SheetContent>
-        <div className="mt-10 flex flex-col gap-6 text-base font-semibold">
-          <a href="/">Home</a>
-          <a href="/">Services</a>
-          <a href="/#4">Guarantee</a>
-        </div>
+        <DialogTitle>
+          <div className="mt-10 flex flex-col gap-2 text-base font-semibold">
+            <a href="/">Home</a>
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="text-xl font-semibold">
+                    Services
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <h3 className="text-lg font-semibold"></h3>
+                    <ul className="flex flex-col gap-5 p-6 md:w-[300px] lg:w-[300px] text-[#004a82]">
+                      <li className=" hover:underline">
+                        <a>Interior painting</a>
+                      </li>
+                      <li className=" hover:underline">
+                        <a>Exterior painting</a>
+                      </li>
+                      <li className=" hover:underline">
+                        <a>Commercial painting</a>
+                      </li>
+                      <li className=" hover:underline">
+                        <a>New Construction</a>
+                      </li>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+            <a
+              href="/#4"
+              className="transition font-semibold w-32 ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 hover:bg-accent/50 px-4 py-2 text-xl rounded-md"
+            >
+              Guarantee
+            </a>
+          </div>
+        </DialogTitle>
       </SheetContent>
     </Sheet>
   );
