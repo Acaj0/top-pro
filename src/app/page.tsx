@@ -128,8 +128,11 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
-          <div className="flex flex-col px-4 md:px-6">
+        <section className="w-full pt-10 pb-12 md:pb-24 lg:pb-32 bg-gray-50">
+          <h3 className="text-3xl font-bold sm:text-4xl md:text-5xl text-center text-[#004a82]">
+            Our Painting Services{" "}
+          </h3>
+          <div className="flex flex-col mt-10 px-4 md:px-64">
             <div className="grid gap-10 md:grid-cols-2 ">
               <div className="relative group">
                 <div className="overflow-hidden rounded-lg">
