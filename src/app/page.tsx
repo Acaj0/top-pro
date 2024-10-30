@@ -13,9 +13,7 @@ export default function Component() {
     width: 2800,
     height: 920,
     quality: 100,
-    priority: true,
-    unoptimized: true,
-    src: "/readypc.png",
+    src: "/pc.png",
   });
   const {
     props: { srcSet: mobile, ...rest },
