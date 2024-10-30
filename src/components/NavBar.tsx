@@ -2,6 +2,16 @@ import Image from "next/image";
 import { AspectRatio } from "./ui/aspect-ratio";
 import { SheetContent, SheetTrigger, Sheet } from "./ui/sheet";
 import { Button } from "./ui/button";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu";
 
 export default function NavBar() {
   return (
@@ -23,7 +33,7 @@ export default function NavBar() {
         <h1 className="italic text-xl text-[#0071a8]"></h1> <MobileNav />{" "}
       </div>
 
-      <div className="hidden h-28 lg:flex justify-between px-28 items-center gap-20 text-xl text-[#0071a8]">
+      <div className="hidden h-28 lg:flex justify-between px-28 items-center gap-20 text-xl text-[#004a82]">
         <a href="/">
           <div className="w-[120px]">
             <AspectRatio ratio={4 / 4}>
@@ -36,13 +46,32 @@ export default function NavBar() {
             </AspectRatio>
           </div>
         </a>
-        <div className="hidden h-24 md:flex justify-between items-center ml-14 gap-20 text-xl font-semibold text-[#0071a8]">
-          <a
-            className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 hover:text-gray-200"
-            href="/"
-          >
-            Services
-          </a>
+        <div className="hidden h-24 md:flex justify-between items-center ml-14 gap-20 text-xl font-semibold text-[#004a82]">
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className="text-xl">
+                  Services
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="flex flex-col gap-5 p-6 md:w-[300px] lg:w-[300px] text-[#004a82]">
+                    <li className=" hover:underline">
+                      <a>Interior panting</a>
+                    </li>
+                    <li className=" hover:underline">
+                      <a>Exterior panting</a>
+                    </li>
+                    <li className=" hover:underline">
+                      <a>Commercial painting</a>
+                    </li>
+                    <li className=" hover:underline">
+                      <a>New Construction</a>
+                    </li>
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
           <a
             className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 hover:text-gray-200"
             href="/#4"

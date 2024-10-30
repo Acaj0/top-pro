@@ -11,9 +11,11 @@ export default function Component() {
     props: { srcSet: desktop },
   } = getImageProps({
     ...common,
-    width: 1400,
-    height: 460,
+    width: 2800,
+    height: 920,
     quality: 100,
+    priority: true,
+    unoptimized:true,
     src: "/ready_pc.png",
   });
   const {
@@ -40,14 +42,19 @@ export default function Component() {
             />
           </picture>
           <div className="flex flex-col items-center">
-            <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl text-center text-[#0071a8]">
+            <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl text-center text-[#004a82]">
               TRANSFORM YOUR SPACE
             </h1>
             <p className="mx-auto max-w-[700px] mt-2 text-gray-500 md:text-xl">
               Professional painting services just a click away.
             </p>
 
-            <Button className="bg-primary mt-5 text-white bg-[#f7930f] hover:bg-[#0071a8]" size={'lg'}>GET A FREE QUOTE</Button>
+            <Button
+              className="bg-primary mt-5 text-white bg-[#f7930f] hover:bg-[#004a82]"
+              size={"lg"}
+            >
+              GET A FREE QUOTE
+            </Button>
           </div>
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32">
