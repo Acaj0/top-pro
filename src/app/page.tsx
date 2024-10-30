@@ -136,15 +136,22 @@ export default function Component() {
             <div className="grid gap-10 md:grid-cols-2 ">
               <div className="relative group">
                 <div className="overflow-hidden rounded-lg">
-                  <Image
-                    src="/interior.jpeg"
-                    width={600}
-                    height={400}
-                    alt="Interior painting"
-                    className="object-cover w-full h-96 transition-transform group-hover:scale-105"
-                  />
+                  <a href="/interior">
+                    <Image
+                      src="/interior.jpeg"
+                      width={600}
+                      height={400}
+                      alt="Interior painting"
+                      className="object-cover w-full h-96 transition-transform group-hover:scale-105"
+                    />
+                  </a>
                 </div>
-                <h3 className="mt-4 text-xl font-bold">Interior Painting</h3>
+                <a
+                  href="/interior"
+                  className="hover:underline text-xl font-bold"
+                >
+                  Interior Painting
+                </a>
                 <p className="text-gray-500">
                   Transform your indoor spaces with our expert interior painting
                   services.

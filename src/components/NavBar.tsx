@@ -58,7 +58,7 @@ export default function NavBar() {
                   <h3 className="text-lg font-semibold"></h3>
                   <ul className="flex flex-col gap-5 p-6 md:w-[300px] lg:w-[300px] text-[#004a82]">
                     <li className=" hover:underline">
-                      <a>Interior painting</a>
+                      <a href="/interior">Interior painting</a>
                     </li>
                     <li className=" hover:underline">
                       <a>Exterior painting</a>
@@ -130,7 +130,7 @@ const MobileNav = () => {
                     <h3 className="text-lg font-semibold"></h3>
                     <ul className="flex flex-col gap-5 p-6 md:w-[300px] lg:w-[300px] text-[#004a82]">
                       <li className=" hover:underline">
-                        <a>Interior painting</a>
+                        <a href="/interior">Interior painting</a>
                       </li>
                       <li className=" hover:underline">
                         <a>Exterior painting</a>
