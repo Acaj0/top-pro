@@ -15,7 +15,7 @@ export default function Component() {
     quality: 100,
     priority: true,
     unoptimized: true,
-    src: "/ready_pc.png",
+    src: "/readypc.png",
   });
   const {
     props: { srcSet: mobile, ...rest },
@@ -24,7 +24,7 @@ export default function Component() {
     width: 700,
     height: 1400,
     quality: 100,
-    src: "/ready_mob.png",
+    src: "/readymob.png",
   });
   return (
     <div className="flex flex-col min-h-screen overflow-clip">
