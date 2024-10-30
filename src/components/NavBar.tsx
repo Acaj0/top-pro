@@ -18,7 +18,7 @@ export default function NavBar() {
     <div>
       <div className="h-16 flex lg:hidden justify-between items-center p-2">
         <a href="/">
-          <div className="w-[80px]">
+          <div className="w-[70px]">
             <AspectRatio ratio={4 / 4}>
               <Image
                 unoptimized={true}
