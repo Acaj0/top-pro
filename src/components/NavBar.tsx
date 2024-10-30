@@ -22,7 +22,7 @@ export default function NavBar() {
             <AspectRatio ratio={4 / 4}>
               <Image
                 unoptimized={true}
-                src={"/marx.png"}
+                src={"/toppro.png"}
                 fill
                 alt="logo da toppro"
                 className="rounded-md object-cover"
@@ -38,7 +38,7 @@ export default function NavBar() {
           <div className="w-[120px]">
             <AspectRatio ratio={4 / 4}>
               <Image
-                src={"/marx.png"}
+                src={"/toppro.png"}
                 fill
                 alt="logo da toppro"
                 className="rounded-md object-cover"
