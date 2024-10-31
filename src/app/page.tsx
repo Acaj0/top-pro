@@ -39,7 +39,7 @@ export default function Component() {
             />
           </picture>
           <div className="flex flex-col items-center">
-            <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl text-center text-[#004a82]">
+            <h1 className="text-2xl font-bold sm:text-4xl md:text-5xl text-center text-[#004a82]">
               TRANSFORM YOUR SPACE
             </h1>
             <p className="mx-auto max-w-[700px] mt-2 text-gray-500 md:text-xl">
@@ -128,9 +128,9 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="w-full pt-10 pb-12 md:pb-24 lg:pb-32 bg-gray-50">
-          <h3 className="text-3xl font-bold sm:text-4xl md:text-5xl text-center text-[#004a82]">
-            Our Painting Services{" "}
+        <section className="w-full pt-10 pb-12 md:pb-24 lg:pb-32 bg-[#004a82]">
+          <h3 className="text-3xl font-bold sm:text-4xl md:text-5xl text-center text-white">
+            Our Services{" "}
           </h3>
           <div className="flex flex-col mt-10 px-4 md:px-64">
             <div className="grid gap-10 md:grid-cols-2 ">
@@ -148,11 +148,11 @@ export default function Component() {
                 </div>
                 <a
                   href="/interior"
-                  className="hover:underline text-xl font-bold"
+                  className="hover:underline text-xl font-bold text-white"
                 >
                   Interior Painting
                 </a>
-                <p className="text-gray-500">
+                <p className="text-gray-300">
                   Transform your indoor spaces with our expert interior painting
                   services.
                 </p>
@@ -167,8 +167,8 @@ export default function Component() {
                     className="object-cover w-full h-96 transition-transform group-hover:scale-105"
                   />
                 </div>
-                <h3 className="mt-4 text-xl font-bold">Exterior Painting</h3>
-                <p className="text-gray-500">
+                <h3 className="mt-4 text-xl font-bold text-white">Exterior Painting</h3>
+                <p className="text-gray-300">
                   Enhance your curb appeal with our professional exterior
                   painting.
                 </p>
@@ -183,8 +183,8 @@ export default function Component() {
                     className="object-cover w-full h-96 transition-transform group-hover:scale-105"
                   />
                 </div>
-                <h3 className="mt-4 text-xl font-bold">Commercial Painting</h3>
-                <p className="text-gray-500">
+                <h3 className="mt-4 text-xl font-bold text-white">Commercial Painting</h3>
+                <p className="text-gray-300">
                   Professional painting solutions for your business space.
                 </p>
               </div>
@@ -198,8 +198,8 @@ export default function Component() {
                     className="object-cover w-full h-96 transition-transform group-hover:scale-105"
                   />
                 </div>
-                <h3 className="mt-4 text-xl font-bold">New Construction</h3>
-                <p className="text-gray-500">
+                <h3 className="mt-4 text-xl font-bold text-white">New Construction</h3>
+                <p className="text-gray-300">
                   Ensure a perfect start with our new construction painting
                   services.
                 </p>
