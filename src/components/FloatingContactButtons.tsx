@@ -6,7 +6,7 @@ export default function ContactBar({ phoneNumber = "+12392860447" }) {
     <div className="fixed bottom-0 left-0 right-0 bg-[#004a82] outline outline-white p-2 flex justify-between items-center z-50">
       <Button
         variant="ghost"
-        className="flex-1 text-white hover:bg-gray-700 transition-colors duration-200"
+        className="flex-1 text-white hover:bg-white transition-colors duration-200"
         onClick={() => window.open(`tel:${phoneNumber}`, '_self')}
       >
         <svg 
@@ -24,7 +24,7 @@ export default function ContactBar({ phoneNumber = "+12392860447" }) {
       <div className="w-px h-8 bg-white mx-2"></div>
       <Button
         variant="ghost"
-        className="flex-1 text-white hover:bg-gray-700 transition-colors duration-200"
+        className="flex-1 text-white hover:bg-white transition-colors duration-200"
         onClick={() => window.open(`sms:${phoneNumber}`, '_self')}
       >
         <svg 
