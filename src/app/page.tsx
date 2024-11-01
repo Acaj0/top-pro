@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import NavBar from "@/components/NavBar";
+import Testimonials from "@/components/Testimonials";
 
 export default function Component() {
   const common = { alt: "Art Direction Example", sizes: "100vw" };
@@ -128,7 +129,10 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="w-full pt-10 pb-12 md:pb-24 lg:pb-32 bg-[#004a82]">
+        <section
+          id="services"
+          className="w-full pt-10 pb-12 md:pb-24 lg:pb-32 bg-[#004a82]"
+        >
           <h3 className="text-3xl font-bold sm:text-4xl md:text-5xl text-center text-white">
             Our Services{" "}
           </h3>
@@ -167,7 +171,9 @@ export default function Component() {
                     className="object-cover w-full h-96 transition-transform group-hover:scale-105"
                   />
                 </div>
-                <h3 className="mt-4 text-xl font-bold text-white">Exterior Painting</h3>
+                <h3 className="mt-4 text-xl font-bold text-white">
+                  Exterior Painting
+                </h3>
                 <p className="text-gray-300">
                   Enhance your curb appeal with our professional exterior
                   painting.
@@ -183,7 +189,9 @@ export default function Component() {
                     className="object-cover w-full h-96 transition-transform group-hover:scale-105"
                   />
                 </div>
-                <h3 className="mt-4 text-xl font-bold text-white">Commercial Painting</h3>
+                <h3 className="mt-4 text-xl font-bold text-white">
+                  Commercial Painting
+                </h3>
                 <p className="text-gray-300">
                   Professional painting solutions for your business space.
                 </p>
@@ -198,13 +206,20 @@ export default function Component() {
                     className="object-cover w-full h-96 transition-transform group-hover:scale-105"
                   />
                 </div>
-                <h3 className="mt-4 text-xl font-bold text-white">New Construction</h3>
+                <h3 className="mt-4 text-xl font-bold text-white">
+                  New Construction
+                </h3>
                 <p className="text-gray-300">
                   Ensure a perfect start with our new construction painting
                   services.
                 </p>
               </div>
             </div>
+          </div>
+        </section>
+        <section className="items-center w-screen flex" id="testimonials">
+          <div className="w-full items-center justify-center">
+            <Testimonials></Testimonials>
           </div>
         </section>
       </main>
