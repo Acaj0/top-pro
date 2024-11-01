@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import NavBar from "@/components/NavBar";
 import Testimonials from "@/components/Testimonials";
+import Faq from "@/components/Faq";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export default function Component() {
   const common = { alt: "Art Direction Example", sizes: "100vw" };
@@ -220,6 +222,26 @@ export default function Component() {
         <section className="items-center w-screen flex" id="testimonials">
           <div className="w-full items-center justify-center">
             <Testimonials></Testimonials>
+          </div>
+        </section>
+        <section
+          className="flex items-center justify-center flex-col"
+          id="Faq"
+        >
+          <div className="flex flex-col w-screen md:w-auto  lg:flex-row mb-10 ">
+            <div className="md:w-[700px] mt-20">
+              <AspectRatio ratio={5 / 4}>
+                <Image
+                  src={"/area.png"}
+                  fill
+                  alt="areas of service"
+                  className="rounded-md object-cover"
+                />
+              </AspectRatio>
+            </div>
+            <div className="md:w-[700px]">
+              <Faq></Faq>
+            </div>
           </div>
         </section>
       </main>
