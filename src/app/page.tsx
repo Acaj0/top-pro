@@ -7,6 +7,7 @@ import Testimonials from "@/components/Testimonials";
 import Faq from "@/components/Faq";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import ContactForm from "@/components/Contact-form";
+import FloatingContactButtons from "@/components/FloatingContactButtons";
 
 export default function Component() {
   const common = { alt: "Art Direction Example", sizes: "100vw" };
@@ -32,6 +33,7 @@ export default function Component() {
     <div className="flex flex-col min-h-screen overflow-clip">
       <NavBar></NavBar>
       <main className="flex flex-col w-screen overflow-clip">
+        <FloatingContactButtons></FloatingContactButtons>
         <section className="w-full py-1 flex flex-col justify-center bg-white">
           <picture>
             <source media="(min-width: 1000px)" srcSet={desktop} />
