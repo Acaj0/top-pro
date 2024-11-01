@@ -6,6 +6,7 @@ import NavBar from "@/components/NavBar";
 import Testimonials from "@/components/Testimonials";
 import Faq from "@/components/Faq";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import ContactForm from "@/components/Contact-form";
 
 export default function Component() {
   const common = { alt: "Art Direction Example", sizes: "100vw" };
@@ -242,6 +243,11 @@ export default function Component() {
             <div className="md:w-[700px]">
               <Faq></Faq>
             </div>
+          </div>
+        </section>
+        <section className="items-center w-screen flex bg-[#004a82]" id="contact">
+          <div className="w-full items-center justify-center">
+            <ContactForm></ContactForm>
           </div>
         </section>
       </main>
