@@ -54,9 +54,10 @@ export default function Component() {
 
             <Button
               className="bg-primary mt-5 w-72 h-12 text-2xl text-[white] bg-[#f7930f] hover:bg-[#004a82]"
+              
               size={"lg"}
             >
-              GET A FREE QUOTE
+              <a href="#contact">GET A FREE QUOTE</a>
             </Button>
           </div>
         </section>
