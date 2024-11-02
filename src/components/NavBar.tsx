@@ -76,7 +76,7 @@ export default function NavBar() {
           </NavigationMenu>
           <a
             className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 hover:bg-accent/50 px-4 py-2 rounded-md"
-            href="/#4"
+            href="/guarantee"
           >
             Guarantee
           </a>
@@ -147,7 +147,7 @@ const MobileNav = () => {
               </NavigationMenuList>
             </NavigationMenu>
             <a
-              href="/#4"
+              href="/guarantee"
               className="transition font-semibold w-32 ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 hover:bg-accent/50 px-4 py-2 text-xl rounded-md"
             >
               Guarantee

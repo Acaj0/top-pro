@@ -54,10 +54,9 @@ export default function Component() {
 
             <Button
               className="bg-primary mt-5 w-72 h-12 text-2xl text-[white] bg-[#f7930f] hover:bg-[#004a82]"
-              
               size={"lg"}
             >
-              <a href="#contact">GET A FREE QUOTE</a>
+              <Link href="#contact">GET A FREE QUOTE</Link>
             </Button>
           </div>
         </section>
@@ -228,10 +227,7 @@ export default function Component() {
             <Testimonials></Testimonials>
           </div>
         </section>
-        <section
-          className="flex items-center justify-center flex-col"
-          id="Faq"
-        >
+        <section className="flex items-center justify-center flex-col" id="Faq">
           <div className="flex flex-col w-screen md:w-auto  lg:flex-row mb-10 ">
             <div className="md:w-[700px] mt-20">
               <AspectRatio ratio={5 / 4}>
@@ -248,7 +244,10 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="items-center w-screen flex bg-[#004a82]" id="contact">
+        <section
+          className="items-center w-screen flex bg-[#004a82]"
+          id="contact"
+        >
           <div className="w-full items-center justify-center">
             <ContactForm></ContactForm>
           </div>
