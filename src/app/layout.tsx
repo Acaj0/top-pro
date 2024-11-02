@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 const fontSans = Montserrat({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -24,7 +25,7 @@ export default function RootLayout({
         <link rel="icon" href="/toppro.png" />
       </head>
       <body className={cn("font-sans", fontSans.variable)}>
-        <main>{children}</main>
+        <main>{children}</main><footer><Footer/></footer>
       </body>
     </html>
   );
