@@ -60,11 +60,11 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-center">
-          <div>
-            <p className="text-xs text-gray-500 mb-4 sm:mb-0">
+          <div className="flex flex-col ">
+            <p className="text-xs text-gray-500 sm:mb-0">
               © 2024 Top Pro Painting. All rights reserved.
             </p>
-            <div className="text-xs text-gray-500 mt-1">
+            <div className="text-xs text-gray-500 mt-1 text-center md:text-left">
               <a
                 href="https://www.lumenweb.com.br/"
                 className="hover:underline"
@@ -74,7 +74,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <nav className="flex gap-4 sm:gap-6">
+          <nav className="flex gap-4 sm:gap-6 mt-5">
             <Link
               className="text-xs text-gray-500 hover:underline underline-offset-4"
               href="/terms-service/#terms"
