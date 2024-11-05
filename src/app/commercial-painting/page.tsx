@@ -25,32 +25,30 @@ const CheckCircleIcon = () => (
   </svg>
 );
 
-export default function InteriorPaintingPage() {
+export default function CommercialPaintingPage() {
   const services = [
-    "Bathroom Painting",
-    "Bedroom Painting",
-    "Cabinet Painting",
-    "Drywall Repair",
-    "Kitchen Painting",
-    "Popcorn Ceiling Removal",
-    "Specialty Texture Painting",
-    "Wallpaper Removal",
-    "Doors, Trim, and Moulding",
-    "Garage Floor Painting",
+    "Commercial properties",
+    "Homeowners associations",
+    "Shopping centers",
+    "Universities",
+    "Schools",
+    "Offices",
+    "Restaurants",
+    "Warehouses",
+    "Hospitals",
+    "And more!"
   ];
   return (
     <div className="min-h-screen bg-background">
       <NavBar></NavBar>
       <main className="container mx-auto px-4 py-8 space-y-12">
         <section className="grid md:grid-cols-2 gap-8 items-center">
-          <div className="space-y-4 ">
+          <div className="space-y-4">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl text-[#004a82]">
-              Interior Painting Services
+              Commercial Painting Services
             </h1>
             <p className="text-xl text-muted-foreground">
-              Transform your living spaces with our expert interior painting
-              services. We bring color and life to your home, one room at a
-              time.
+              Elevate your business image with our professional commercial painting services. We deliver quality results for a wide range of commercial properties.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 p-2">
               {services.map((service, index) => (
@@ -76,8 +74,8 @@ export default function InteriorPaintingPage() {
           </div>
           <div className="relative aspect-video rounded-lg overflow-hidden">
             <Image
-              src="/interior.jpeg"
-              alt="Interior painting showcase"
+              src="/comer.jpg"
+              alt="Commercial painting showcase"
               layout="fill"
               objectFit="cover"
               className="rounded-lg"
@@ -85,9 +83,18 @@ export default function InteriorPaintingPage() {
           </div>
         </section>
 
+        <section className="bg-muted rounded-lg p-8 space-y-4">
+          <h2 className="text-3xl font-semibold text-[#004a82] mb-4">
+            Tailored Commercial Painting Solutions
+          </h2>
+          <p className="text-lg text-muted-foreground">
+            Our Painters can tailor our commercial painting services to meet a variety of project objectives. We offer anything from meticulous painting to volume-based, cost-conscious projects. We will work with you to design your job before we start, ensuring that the proper paints, finishes, tools, and techniques are utilized to create the results you want within your budget.
+          </p>
+        </section>
+
         <section className="space-y-8 bg-[#004a82] rounded-lg p-6">
-          <h2 className="text-3xl font-semibold text-center  text-white">
-            Why Choose Our Interior Painting Service?
+          <h2 className="text-3xl font-semibold text-center text-white">
+            Why Choose Our Commercial Painting Service?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {advantages.map((advantage, index) => (
@@ -110,7 +117,7 @@ export default function InteriorPaintingPage() {
 
         <section className="bg-muted rounded-lg p-8 space-y-4">
           <h2 className="text-3xl font-semibold text-[#004a82]">
-            Our Interior Painting Process
+            Our Commercial Painting Process
           </h2>
           <ol className="list-decimal list-inside space-y-2">
             {process.map((step, index) => (
@@ -124,17 +131,17 @@ export default function InteriorPaintingPage() {
 
         <section className="text-center">
           <h2 className="text-3xl font-semibold text-[#004a82]">
-            Ready to Transform Your Space?
+            Ready to Transform Your Commercial Space?
           </h2>
           <p className="text-xl text-muted-foreground">
-            Let our expert painters bring your vision to life. Contact us today
+            Let our expert painters enhance your business environment. Contact us today
             for a free consultation and quote.
           </p>
           <Button
             size="lg"
             className="mt-5 bg-primary w-80 h-12 text-lg text-[white] bg-[#f7930f] hover:bg-[#004a82]"
           >
-            <Link href="/#contact">Schedule Your Interior Painting</Link>
+            <Link href="/#contact">Schedule Your Commercial Painting</Link>
           </Button>
         </section>
       </main>
@@ -144,34 +151,34 @@ export default function InteriorPaintingPage() {
 
 const advantages = [
   {
-    title: "Expert Color Consultation",
+    title: "Experienced Team",
     description:
-      "Our professional color consultants help you choose the perfect palette for your space.",
+      "Our painters are highly skilled in commercial projects of all sizes and complexities.",
   },
   {
-    title: "Premium Quality Paints",
+    title: "Minimal Disruption",
     description:
-      "We use only top-tier, long-lasting paints for a beautiful and durable finish.",
+      "We work efficiently to minimize impact on your business operations.",
   },
   {
-    title: "Meticulous Preparation",
+    title: "Quality Materials",
     description:
-      "Thorough surface preparation ensures a flawless and long-lasting paint job.",
+      "We use premium, long-lasting paints and finishes suitable for commercial environments.",
   },
   {
-    title: "Efficient and Tidy Service",
+    title: "Customized Solutions",
     description:
-      "We work quickly and cleanly, minimizing disruption to your daily life.",
+      "We tailor our services to meet your specific needs, timeline, and budget.",
   },
   {
-    title: "Detailed Clean-Up",
+    title: "Safety Compliance",
     description:
-      "We leave your space spotless, so you can enjoy your newly painted interior immediately.",
+      "We adhere to all safety regulations and maintain a clean work environment.",
   },
   {
-    title: "Satisfaction Guarantee",
+    title: "Comprehensive Service",
     description:
-      "Our work is backed by a satisfaction guarantee for your peace of mind.",
+      "From surface preparation to final touches, we handle all aspects of your painting project.",
   },
 ];
 
@@ -179,30 +186,30 @@ const process = [
   {
     title: "Initial Consultation",
     description:
-      "We discuss your vision, preferences, and provide expert color advice.",
+      "We assess your commercial space and discuss your project requirements and timeline.",
   },
   {
-    title: "Surface Preparation",
+    title: "Customized Proposal",
     description:
-      "We clean, repair, and prime surfaces to ensure the best paint adhesion and finish.",
+      "We provide a detailed proposal tailored to your specific needs and budget.",
   },
   {
-    title: "Protection of Surroundings",
+    title: "Preparation",
     description:
-      "We carefully cover and protect your furniture, floors, and fixtures.",
+      "We prepare the surfaces, protect fixtures, and set up our equipment efficiently.",
   },
   {
     title: "Paint Application",
     description:
-      "Our skilled painters apply paint with precision, ensuring even coverage and clean lines.",
+      "Our team applies paint with precision, ensuring even coverage and a professional finish.",
   },
   {
-    title: "Quality Inspection",
+    title: "Quality Control",
     description:
-      "We perform a thorough inspection to ensure every detail meets our high standards.",
+      "We conduct thorough inspections throughout the project to maintain high standards.",
   },
   {
-    title: "Final Walk-Through",
+    title: "Final Walkthrough",
     description:
       "We review the completed work with you to ensure your complete satisfaction.",
   },

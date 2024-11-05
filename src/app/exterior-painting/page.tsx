@@ -25,32 +25,30 @@ const CheckCircleIcon = () => (
   </svg>
 );
 
-export default function InteriorPaintingPage() {
+export default function ExteriorPaintingPage() {
   const services = [
-    "Bathroom Painting",
-    "Bedroom Painting",
-    "Cabinet Painting",
-    "Drywall Repair",
-    "Kitchen Painting",
-    "Popcorn Ceiling Removal",
-    "Specialty Texture Painting",
-    "Wallpaper Removal",
-    "Doors, Trim, and Moulding",
-    "Garage Floor Painting",
+    "Concrete Painting",
+    "Deck Staining",
+    "Fence Painting",
+    "Power Washing",
+    "Sanding & Prep Work",
+    "Wood Staining",
+    "Lanai Painting",
+    "Pool Deck",
+    "Driveway / walkway"
   ];
   return (
     <div className="min-h-screen bg-background">
       <NavBar></NavBar>
       <main className="container mx-auto px-4 py-8 space-y-12">
         <section className="grid md:grid-cols-2 gap-8 items-center">
-          <div className="space-y-4 ">
+          <div className="space-y-4">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl text-[#004a82]">
-              Interior Painting Services
+              Exterior Painting Services
             </h1>
             <p className="text-xl text-muted-foreground">
-              Transform your living spaces with our expert interior painting
-              services. We bring color and life to your home, one room at a
-              time.
+              Enhance your home's curb appeal with our expert exterior painting
+              services. We protect and beautify your property, from walls to decks.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 p-2">
               {services.map((service, index) => (
@@ -76,8 +74,8 @@ export default function InteriorPaintingPage() {
           </div>
           <div className="relative aspect-video rounded-lg overflow-hidden">
             <Image
-              src="/interior.jpeg"
-              alt="Interior painting showcase"
+              src="/outside.jpeg"
+              alt="Exterior painting showcase"
               layout="fill"
               objectFit="cover"
               className="rounded-lg"
@@ -86,8 +84,8 @@ export default function InteriorPaintingPage() {
         </section>
 
         <section className="space-y-8 bg-[#004a82] rounded-lg p-6">
-          <h2 className="text-3xl font-semibold text-center  text-white">
-            Why Choose Our Interior Painting Service?
+          <h2 className="text-3xl font-semibold text-center text-white">
+            Why Choose Our Exterior Painting Service?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {advantages.map((advantage, index) => (
@@ -110,7 +108,7 @@ export default function InteriorPaintingPage() {
 
         <section className="bg-muted rounded-lg p-8 space-y-4">
           <h2 className="text-3xl font-semibold text-[#004a82]">
-            Our Interior Painting Process
+            Our Exterior Painting Process
           </h2>
           <ol className="list-decimal list-inside space-y-2">
             {process.map((step, index) => (
@@ -124,17 +122,17 @@ export default function InteriorPaintingPage() {
 
         <section className="text-center">
           <h2 className="text-3xl font-semibold text-[#004a82]">
-            Ready to Transform Your Space?
+            Ready to Transform Your Home's Exterior?
           </h2>
           <p className="text-xl text-muted-foreground">
-            Let our expert painters bring your vision to life. Contact us today
+            Let our expert painters enhance your home's curb appeal. Contact us today
             for a free consultation and quote.
           </p>
           <Button
             size="lg"
             className="mt-5 bg-primary w-80 h-12 text-lg text-[white] bg-[#f7930f] hover:bg-[#004a82]"
           >
-            <Link href="/#contact">Schedule Your Interior Painting</Link>
+            <Link href="/#contact">Schedule Your Exterior Painting</Link>
           </Button>
         </section>
       </main>
@@ -144,34 +142,34 @@ export default function InteriorPaintingPage() {
 
 const advantages = [
   {
+    title: "Weather-Resistant Paints",
+    description:
+      "We use high-quality, weather-resistant paints to protect your home from the elements.",
+  },
+  {
+    title: "Comprehensive Surface Prep",
+    description:
+      "Our thorough preparation ensures a long-lasting, beautiful finish on all exterior surfaces.",
+  },
+  {
     title: "Expert Color Consultation",
     description:
-      "Our professional color consultants help you choose the perfect palette for your space.",
+      "Our color experts help you choose the perfect exterior palette to enhance your home's appeal.",
   },
   {
-    title: "Premium Quality Paints",
+    title: "Efficient Project Management",
     description:
-      "We use only top-tier, long-lasting paints for a beautiful and durable finish.",
+      "We complete your exterior painting project quickly and with minimal disruption to your daily life.",
   },
   {
-    title: "Meticulous Preparation",
+    title: "Attention to Detail",
     description:
-      "Thorough surface preparation ensures a flawless and long-lasting paint job.",
-  },
-  {
-    title: "Efficient and Tidy Service",
-    description:
-      "We work quickly and cleanly, minimizing disruption to your daily life.",
-  },
-  {
-    title: "Detailed Clean-Up",
-    description:
-      "We leave your space spotless, so you can enjoy your newly painted interior immediately.",
+      "From trim to siding, we ensure every aspect of your home's exterior is painted to perfection.",
   },
   {
     title: "Satisfaction Guarantee",
     description:
-      "Our work is backed by a satisfaction guarantee for your peace of mind.",
+      "We stand behind our work with a satisfaction guarantee for your peace of mind.",
   },
 ];
 
@@ -179,17 +177,17 @@ const process = [
   {
     title: "Initial Consultation",
     description:
-      "We discuss your vision, preferences, and provide expert color advice.",
+      "We assess your home's exterior and discuss your vision and color preferences.",
   },
   {
     title: "Surface Preparation",
     description:
-      "We clean, repair, and prime surfaces to ensure the best paint adhesion and finish.",
+      "We clean, repair, and prime all surfaces to ensure the best paint adhesion and finish.",
   },
   {
     title: "Protection of Surroundings",
     description:
-      "We carefully cover and protect your furniture, floors, and fixtures.",
+      "We carefully cover and protect landscaping, outdoor furniture, and other items.",
   },
   {
     title: "Paint Application",

@@ -38,8 +38,12 @@ export default function GuaranteePage() {
               Ready to Experience Top-Quality Painting?
             </h2>
             <p className="text-xl text-muted-foreground max-w-prose mx-auto">
-              Let us bring your vision to life with our guaranteed professional
-              painting services.
+              At Top Pro Painting, our team goes above and beyond to ensure your
+              total satisfaction. Our painters have years of experience and each
+              of them receives comprehensive training to make sure they provide
+              services that meet our high standards. You have many options when
+              it comes to local painting companies - Top Pro Painting promises
+              to be the simplest painting experience.
             </p>
             <Button
               className="bg-primary mt-5 w-72 h-12 text-2xl text-[white] bg-[#f7930f] hover:bg-[#004a82]"
@@ -153,8 +157,8 @@ const guarantees = [
         />
       </svg>
     ),
-    title: "5-Year Workmanship Warranty",
+    title: "1-Year Workmanship Warranty",
     description:
-      "Our work is guaranteed for 5 years. If any issues arise due to our workmanship, we'll fix it free of charge.",
+      "Our work is guaranteed for 1 year. If any issues arise due to our workmanship, we'll fix it free of charge.",
   },
 ];

@@ -168,56 +168,68 @@ export default function Component() {
               </div>
               <div className="relative group">
                 <div className="overflow-hidden rounded-lg">
-                  <Image
-                    src="/outside.jpeg"
-                    width={600}
-                    height={400}
-                    alt="Exterior painting"
-                    className="object-cover w-full h-96 transition-transform group-hover:scale-105"
-                  />
+                  <a href="/exterior-painting">
+                    <Image
+                      src="/outside.jpeg"
+                      width={600}
+                      height={400}
+                      alt="Exterior painting"
+                      className="object-cover w-full h-96 transition-transform group-hover:scale-105"
+                    />
+                  </a>
                 </div>
-                <h3 className="mt-4 text-xl font-bold text-white">
-                  Exterior Painting
-                </h3>
-                <p className="text-gray-300">
-                  Enhance your curb appeal with our professional exterior
-                  painting.
-                </p>
+                <a href="/exterior-painting">
+                  <h3 className="mt-4 text-xl font-bold text-white">
+                    Exterior Painting
+                  </h3>
+                  <p className="text-gray-300">
+                    Enhance your curb appeal with our professional exterior
+                    painting.
+                  </p>
+                </a>
               </div>
               <div className="relative group">
                 <div className="overflow-hidden rounded-lg">
-                  <Image
-                    src="/comer.jpg"
-                    width={600}
-                    height={400}
-                    alt="Commercial painting"
-                    className="object-cover w-full h-96 transition-transform group-hover:scale-105"
-                  />
+                  <a href="/commercial-painting">
+                    <Image
+                      src="/comer.jpg"
+                      width={600}
+                      height={400}
+                      alt="Commercial painting"
+                      className="object-cover w-full h-96 transition-transform group-hover:scale-105"
+                    />
+                  </a>
                 </div>
-                <h3 className="mt-4 text-xl font-bold text-white">
-                  Commercial Painting
-                </h3>
-                <p className="text-gray-300">
-                  Professional painting solutions for your business space.
-                </p>
+                <a href="/commercial-painting">
+                  <h3 className="mt-4 text-xl font-bold text-white">
+                    Commercial Painting
+                  </h3>
+                  <p className="text-gray-300">
+                    Professional painting solutions for your business space.
+                  </p>
+                </a>
               </div>
               <div className="relative group">
                 <div className="overflow-hidden rounded-lg">
-                  <Image
-                    src="/new.jpeg"
-                    width={600}
-                    height={400}
-                    alt="New Construction painting"
-                    className="object-cover w-full h-96 transition-transform group-hover:scale-105"
-                  />
+                  <a href="/new-construction">
+                    <Image
+                      src="/new.jpeg"
+                      width={600}
+                      height={400}
+                      alt="New Construction painting"
+                      className="object-cover w-full h-96 transition-transform group-hover:scale-105"
+                    />
+                  </a>
                 </div>
-                <h3 className="mt-4 text-xl font-bold text-white">
-                  New Construction
-                </h3>
-                <p className="text-gray-300">
-                  Ensure a perfect start with our new construction painting
-                  services.
-                </p>
+                <a href="/new-construction">
+                  <h3 className="mt-4 text-xl font-bold text-white">
+                    New Construction
+                  </h3>
+                  <p className="text-gray-300">
+                    Ensure a perfect start with our new construction painting
+                    services.
+                  </p>
+                </a>
               </div>
             </div>
           </div>

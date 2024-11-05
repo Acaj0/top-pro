@@ -25,32 +25,28 @@ const CheckCircleIcon = () => (
   </svg>
 );
 
-export default function InteriorPaintingPage() {
+export default function Page() {
   const services = [
-    "Bathroom Painting",
-    "Bedroom Painting",
-    "Cabinet Painting",
-    "Drywall Repair",
-    "Kitchen Painting",
-    "Popcorn Ceiling Removal",
-    "Specialty Texture Painting",
-    "Wallpaper Removal",
-    "Doors, Trim, and Moulding",
-    "Garage Floor Painting",
+    "Residential new builds",
+    "Commercial constructions",
+    "Multi-unit developments",
+    "Custom homes",
+    "Office buildings",
+    "Retail spaces",
+    "Industrial facilities",
+    "Educational institutions"
   ];
   return (
     <div className="min-h-screen bg-background">
       <NavBar></NavBar>
       <main className="container mx-auto px-4 py-8 space-y-12">
         <section className="grid md:grid-cols-2 gap-8 items-center">
-          <div className="space-y-4 ">
+          <div className="space-y-4">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl text-[#004a82]">
-              Interior Painting Services
+              New Construction Painting Services
             </h1>
             <p className="text-xl text-muted-foreground">
-              Transform your living spaces with our expert interior painting
-              services. We bring color and life to your home, one room at a
-              time.
+              Bring your new construction project to life with our expert painting services. We provide high-quality finishes for a wide range of new builds.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 p-2">
               {services.map((service, index) => (
@@ -76,8 +72,8 @@ export default function InteriorPaintingPage() {
           </div>
           <div className="relative aspect-video rounded-lg overflow-hidden">
             <Image
-              src="/interior.jpeg"
-              alt="Interior painting showcase"
+              src="/new.jpeg"
+              alt="New construction painting showcase"
               layout="fill"
               objectFit="cover"
               className="rounded-lg"
@@ -86,8 +82,8 @@ export default function InteriorPaintingPage() {
         </section>
 
         <section className="space-y-8 bg-[#004a82] rounded-lg p-6">
-          <h2 className="text-3xl font-semibold text-center  text-white">
-            Why Choose Our Interior Painting Service?
+          <h2 className="text-3xl font-semibold text-center text-white">
+            Why Choose Our New Construction Painting Service?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {advantages.map((advantage, index) => (
@@ -110,7 +106,7 @@ export default function InteriorPaintingPage() {
 
         <section className="bg-muted rounded-lg p-8 space-y-4">
           <h2 className="text-3xl font-semibold text-[#004a82]">
-            Our Interior Painting Process
+            Our New Construction Painting Process
           </h2>
           <ol className="list-decimal list-inside space-y-2">
             {process.map((step, index) => (
@@ -124,17 +120,17 @@ export default function InteriorPaintingPage() {
 
         <section className="text-center">
           <h2 className="text-3xl font-semibold text-[#004a82]">
-            Ready to Transform Your Space?
+            Ready to Bring Your New Construction to Life?
           </h2>
           <p className="text-xl text-muted-foreground">
-            Let our expert painters bring your vision to life. Contact us today
+            Let our expert painters add the finishing touches to your new build. Contact us today
             for a free consultation and quote.
           </p>
           <Button
             size="lg"
-            className="mt-5 bg-primary w-80 h-12 text-lg text-[white] bg-[#f7930f] hover:bg-[#004a82]"
+            className="mt-5 bg-primary w-92 h-12 text-lg text-[white] bg-[#f7930f] hover:bg-[#004a82]"
           >
-            <Link href="/#contact">Schedule Your Interior Painting</Link>
+            <Link href="/#contact">Schedule Your New Construction Painting</Link>
           </Button>
         </section>
       </main>
@@ -144,34 +140,34 @@ export default function InteriorPaintingPage() {
 
 const advantages = [
   {
-    title: "Expert Color Consultation",
+    title: "Specialized Expertise",
     description:
-      "Our professional color consultants help you choose the perfect palette for your space.",
+      "Our team is trained specifically in new construction painting techniques and requirements.",
   },
   {
-    title: "Premium Quality Paints",
+    title: "Quality Materials",
     description:
-      "We use only top-tier, long-lasting paints for a beautiful and durable finish.",
+      "We use premium paints and finishes designed to withstand the test of time in new buildings.",
   },
   {
-    title: "Meticulous Preparation",
+    title: "Efficient Project Management",
     description:
-      "Thorough surface preparation ensures a flawless and long-lasting paint job.",
+      "We coordinate seamlessly with other contractors to ensure timely project completion.",
   },
   {
-    title: "Efficient and Tidy Service",
+    title: "Attention to Detail",
     description:
-      "We work quickly and cleanly, minimizing disruption to your daily life.",
+      "We ensure every surface is properly prepared and finished to the highest standards.",
   },
   {
-    title: "Detailed Clean-Up",
+    title: "Flexible Scheduling",
     description:
-      "We leave your space spotless, so you can enjoy your newly painted interior immediately.",
+      "We adapt our work schedule to fit your construction timeline and deadlines.",
   },
   {
-    title: "Satisfaction Guarantee",
+    title: "Comprehensive Service",
     description:
-      "Our work is backed by a satisfaction guarantee for your peace of mind.",
+      "From priming to final coats, we handle all aspects of your new construction painting needs.",
   },
 ];
 
@@ -179,31 +175,41 @@ const process = [
   {
     title: "Initial Consultation",
     description:
-      "We discuss your vision, preferences, and provide expert color advice.",
+      "We meet with you to discuss your project requirements, timeline, and design vision.",
   },
   {
-    title: "Surface Preparation",
+    title: "Surface Inspection",
     description:
-      "We clean, repair, and prime surfaces to ensure the best paint adhesion and finish.",
+      "We thoroughly inspect all surfaces to ensure they're ready for painting and identify any necessary preparations.",
   },
   {
-    title: "Protection of Surroundings",
+    title: "Color and Finish Selection",
     description:
-      "We carefully cover and protect your furniture, floors, and fixtures.",
+      "We assist you in choosing the perfect colors and finishes for each area of your new construction.",
+  },
+  {
+    title: "Preparation",
+    description:
+      "We prepare all surfaces, including priming, sanding, and addressing any imperfections.",
   },
   {
     title: "Paint Application",
     description:
-      "Our skilled painters apply paint with precision, ensuring even coverage and clean lines.",
+      "Our team applies paint with precision, ensuring even coverage and a flawless finish.",
   },
   {
-    title: "Quality Inspection",
+    title: "Quality Control",
     description:
-      "We perform a thorough inspection to ensure every detail meets our high standards.",
+      "We conduct thorough inspections throughout the project to maintain the highest standards.",
   },
   {
-    title: "Final Walk-Through",
+    title: "Final Walkthrough",
     description:
       "We review the completed work with you to ensure your complete satisfaction.",
+  },
+  {
+    title: "Clean-up and Handover",
+    description:
+      "We clean up the work area, remove all equipment, and provide you with care instructions for your new paint job.",
   },
 ];
