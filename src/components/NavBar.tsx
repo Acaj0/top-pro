@@ -61,13 +61,13 @@ export default function NavBar() {
                       <a href="/interior">Interior painting</a>
                     </li>
                     <li className=" hover:underline">
-                      <a>Exterior painting</a>
+                      <a href="exterior-painting">Exterior painting</a>
                     </li>
                     <li className=" hover:underline">
-                      <a>Commercial painting</a>
+                      <a href="commercial-painting">Commercial painting</a>
                     </li>
                     <li className=" hover:underline">
-                      <a>New Construction</a>
+                      <a href="new-construction">New Construction</a>
                     </li>
                   </ul>
                 </NavigationMenuContent>
@@ -133,13 +133,13 @@ const MobileNav = () => {
                         <a href="/interior">Interior painting</a>
                       </li>
                       <li className=" hover:underline">
-                        <a>Exterior painting</a>
+                        <a href="exterior-painting">Exterior painting</a>
                       </li>
                       <li className=" hover:underline">
-                        <a>Commercial painting</a>
+                        <a href="commercial-painting">Commercial painting</a>
                       </li>
                       <li className=" hover:underline">
-                        <a>New Construction</a>
+                        <a href="new-construction">New Construction</a>
                       </li>
                     </ul>
                   </NavigationMenuContent>
