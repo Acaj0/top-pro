@@ -128,9 +128,9 @@ export default function Page() {
           </p>
           <Button
             size="lg"
-            className="mt-5 bg-primary md:w-92 h-12 text-lg text-[white] bg-[#f7930f] hover:bg-[#004a82]"
+            className="mt-5 bg-primary w-72 p-2 h-12 text-lg text-[white] bg-[#f7930f] hover:bg-[#004a82]"
           >
-            <Link href="/#contact">Schedule Your New Construction Painting</Link>
+            <Link href="/#contact">Schedule Your New Painting</Link>
           </Button>
         </section>
       </main>
