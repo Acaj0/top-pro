@@ -32,7 +32,7 @@ const faqs: FAQItem[] = [
   },
   {
     question: "How does the color consultation work?",
-    answer: "We offer color testing by Sherwin-Williams, limited to 3 color options per project at no charge."
+    answer: "Take the guesswork out of choosing the right hue. Our Color to Go® paint samples are great for giving you an idea of how a color looks and feels in your space throughout the day. Each sample comes in a quart-sized container that holds enough paint for creating test swatches so you can choose your final color with confidence."
   }
 ]
 
