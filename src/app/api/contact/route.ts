@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server"
 import { Resend } from "resend"
 
-const resend = new Resend('re_FyGTW6MZ_59XgkERja6wQJpWEh8p3gx42')
+const resend = new Resend('re_hZCSGScH_JsHFAgPQ3qkREjnqmkNRwufi')
 
 export async function POST(req: Request) {
   try {
@@ -10,7 +10,7 @@ export async function POST(req: Request) {
 
     const data = await resend.emails.send({
       from: "Top Pro Painting <onboarding@resend.dev>",
-      to: "acaj007.games@gmail.com", // Replace with your email
+      to: "alfredo@toppropaint.com", // Replace with your email
       subject: `New Contact Form Submission - ${service}`,
       html: `
         <h2>New Contact Form Submission</h2>
