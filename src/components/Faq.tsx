@@ -1,41 +1,40 @@
-"use client";
-import { useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+'use client'
+import { useState } from "react"
+import { ChevronDown, ChevronUp } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
 
 interface FAQItem {
-  question: string;
-  answer: string;
+  question: string
+  answer: string
 }
 
 const faqs: FAQItem[] = [
   {
     question: "What types of painting services do you offer?",
-    answer:
-      "We offer a wide range of painting services including interior and exterior residential painting, commercial painting, color consultation, cabinet refinishing, and deck staining.",
+    answer: "We offer a wide range of painting services including interior and exterior residential painting, commercial painting, color consultation, cabinet refinishing, and deck staining."
   },
   {
     question: "How long does a typical painting project take?",
-    answer:
-      "The duration of a project depends on its size and complexity. A standard interior room usually takes 1-2 days, while an exterior project for an average-sized home might take 3-5 days. We'll provide a more accurate timeline during our initial consultation.",
+    answer: "The duration of a project depends on its size and complexity. A standard interior room usually takes 1-2 days, while an exterior project for an average-sized home might take 3-5 days. We'll provide a more accurate timeline during our initial consultation."
   },
   {
     question: "Do you provide free estimates?",
-    answer:
-      "Yes, we offer free, no-obligation estimates for all our painting services. Contact us to schedule an on-site evaluation and detailed quote.",
+    answer: "Yes, we offer free, no-obligation estimates for all our painting services. Contact us to schedule an on-site evaluation and detailed quote."
   },
   {
     question: "What kind of paint do you use?",
-    answer:
-      "We use high-quality, durable paints from trusted brands like Sherwin-Williams and Benjamin Moore. We also offer eco-friendly and low-VOC options for environmentally conscious customers.",
+    answer: "We use high-quality, durable paints from trusted brands like Sherwin-Williams and Benjamin Moore. We also offer eco-friendly and low-VOC options for environmentally conscious customers."
   },
   {
     question: "Are your painters licensed and insured?",
-    answer:
-      "Absolutely. All our painters are fully licensed, bonded, and insured. We prioritize the safety of our team and your property throughout the painting process.",
+    answer: "Absolutely. All our painters are fully licensed, bonded, and insured. We prioritize the safety of our team and your property throughout the painting process."
   },
-];
+  {
+    question: "How does the color consultation work?",
+    answer: "We offer color testing by Sherwin-Williams, limited to 3 color options per project at no charge."
+  }
+]
 
 export default function Faq() {
   return (
@@ -51,11 +50,11 @@ export default function Faq() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
 function FAQItem({ question, answer }: FAQItem) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <Card className="mb-4">
@@ -65,28 +64,20 @@ function FAQItem({ question, answer }: FAQItem) {
           variant="ghost"
           onClick={() => setIsOpen(!isOpen)}
           aria-expanded={isOpen}
-          aria-controls={`faq-answer-${question
-            .replace(/\s+/g, "-")
-            .toLowerCase()}`}
+          aria-controls={`faq-answer-${question.replace(/\s+/g, '-').toLowerCase()}`}
         >
-          <span className="font-semibold text-md md:text-lg text-[#004a82]">
-            {question}
-          </span>
-          {isOpen ? (
-            <ChevronUp className="h-5 w-5" />
-          ) : (
-            <ChevronDown className="h-5 w-5" />
-          )}
+          <span className="font-semibold text-md md:text-lg text-[#004a82]">{question}</span>
+          {isOpen ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
         </Button>
         {isOpen && (
           <div
             className="p-4 pt-0 mt-2 text-gray-700"
-            id={`faq-answer-${question.replace(/\s+/g, "-").toLowerCase()}`}
+            id={`faq-answer-${question.replace(/\s+/g, '-').toLowerCase()}`}
           >
             {answer}
           </div>
         )}
       </CardContent>
     </Card>
-  );
+  )
 }
