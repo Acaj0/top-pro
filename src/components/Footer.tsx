@@ -32,7 +32,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-600">
               <li>Phone: (239) 286-0447</li>
               <li>Email: info@toppropaintingco.com</li>
-              <li>Address: 123 Paint Street, Colorful City, ST 12345</li>
+              <li>Address: 1817 Hancock Bridge Pkwy, Cape Coral, FL 33990</li>
             </ul>
           </div>
           <div>

@@ -73,15 +73,11 @@ const termsOfService = [
     content: "If you need to cancel or reschedule, please provide at least 48 hours notice. Late cancellations may be subject to a fee as outlined in our cancellation policy."
   },
   {
-    title: "6. Warranty and Limitations",
-    content: "We offer a limited warranty on our workmanship. This warranty does not cover damage due to normal wear and tear, improper maintenance, or acts of nature. Please refer to our warranty document for full details."
-  },
-  {
-    title: "7. Liability",
+    title: "6. Liability",
     content: "Top Pro Painting is not liable for any indirect, incidental, or consequential damages. Our liability is limited to the amount paid for the services provided."
   },
   {
-    title: "8. Modifications to Terms",
+    title: "7. Modifications to Terms",
     content: "We reserve the right to modify these terms at any time. Continued use of our services after any such changes shall constitute your consent to such changes."
   }
 ]
@@ -117,6 +113,6 @@ const privacyPolicy = [
   },
   {
     title: "8. Contact Us",
-    content: "If you have any questions about this privacy policy, please contact us at [Your Contact Information]."
+    content: "If you have any questions about this privacy policy, please contact us at (239) 286-0447."
   }
 ]
