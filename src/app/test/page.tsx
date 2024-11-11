@@ -44,14 +44,15 @@ export default function Component() {
               alt="hero"
             />
           </picture>
-          <div className="flex flex-col items-center">
-            <h1 className="text-2xl font-bold sm:text-4xl md:text-5xl text-center text-[#004a82]">
+          <div className="flex flex-col items-center bg-[#004a82]">
+            <h1 className="text-2xl font-bold sm:text-4xl md:text-5xl text-center text-white">
               TRANSFORM YOUR SPACE
             </h1>
-            <p className="mx-auto max-w-[700px] mt-2 text-gray-500 md:text-xl">
+            <p className="mx-auto max-w-[700px] mt-2 mb-5 text-gray-200 md:text-xl">
               Professional painting services just a click away.
             </p>
-
+          </div>
+          <div className="flex items-center justify-center">
             <Button
               className=" mt-5 w-72 h-12 text-2xl motion-safe:animate-bounce rounded-none text-[white] bg-[#a8cf45] hover:bg-[#004a82]"
               size={"lg"}
