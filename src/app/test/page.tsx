@@ -46,7 +46,7 @@ export default function Component() {
           </picture>
           <div className="flex items-center justify-center">
             <div className="flex flex-col md:p-10 items-center  justify-center bg-[#004a82]">
-              <h1 className="text-2xl font-bold sm:text-4xl md:text-5xl md:text-left text-center text-white">
+              <h1 className="text-2xl font-bold sm:text-4xl md:text-3xl md:text-left text-center text-white">
                 TRANSFORM YOUR SPACE!
               </h1>
               <p className=" md:flex hidden mx-auto max-w-[700px] mt-2 mb-5 text-gray-200 md:text-xl">
