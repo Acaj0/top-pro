@@ -17,7 +17,7 @@ import { DialogTitle } from "@radix-ui/react-dialog";
 export default function NavBar() {
   return (
     <div>
-      <div className="h-16 flex lg:hidden justify-between items-center p-2">
+      <div className="h-18 flex lg:hidden justify-between items-center p-2">
         <a href="/">
           <div className="w-[70px]">
             <AspectRatio ratio={4 / 4}>
@@ -34,7 +34,7 @@ export default function NavBar() {
         <h1 className="italic text-xl text-[#0071a8]"></h1> <MobileNav />{" "}
       </div>
 
-      <div className="hidden h-28 lg:flex justify-between px-28 items-center gap-20 text-xl text-[#004a82]">
+      <div className="hidden h-32 lg:flex justify-between px-28 items-center gap-20 text-xl text-[#004a82]">
         <a href="/">
           <div className="w-[120px]">
             <AspectRatio ratio={4 / 4}>
