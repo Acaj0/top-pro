@@ -18,7 +18,7 @@ export default function Component() {
     width: 2800,
     height: 920,
     quality: 100,
-    src: "/pc.png",
+    src: "/pc2.png",
   });
   const {
     props: { srcSet: mobile, ...rest },
@@ -27,14 +27,14 @@ export default function Component() {
     width: 700,
     height: 1400,
     quality: 100,
-    src: "/readymob.png",
+    src: "/readymob2.png",
   });
   return (
     <div className="flex flex-col min-h-screen overflow-clip">
       <NavBar></NavBar>
       <main className="flex flex-col w-screen overflow-clip">
         <FloatingContactButtons></FloatingContactButtons>
-        <section className="w-full py-1 flex flex-col justify-center bg-white">
+        <section className="w-full py-1 flex flex-col justify-center bg-[#004a82]">
           <picture>
             <source media="(min-width: 1000px)" srcSet={desktop} />
             <source media="(min-width: 500px)" srcSet={mobile} />
@@ -44,20 +44,36 @@ export default function Component() {
               alt="hero"
             />
           </picture>
-          <div className="flex flex-col items-center">
-            <h1 className="text-2xl font-bold sm:text-4xl md:text-5xl text-center text-[#004a82]">
-              TRANSFORM YOUR SPACE
-            </h1>
-            <p className="mx-auto max-w-[700px] mt-2 text-gray-500 md:text-xl">
-              Professional painting services just a click away.
-            </p>
-
-            <Button
-              className="bg-primary mt-5 w-72 h-12 text-2xl text-[white] bg-[#f7930f] hover:bg-[#004a82]"
-              size={"lg"}
-            >
-              <Link href="#contact">GET A FREE QUOTE</Link>
-            </Button>
+          <div className="flex items-center justify-center">
+            <div className="flex flex-col md:p-10 items-center  justify-center bg-[#004a82]">
+              <h1 className="text-2xl font-bold sm:text-4xl md:text-3xl md:text-left text-center text-white">
+                TRANSFORM YOUR SPACE!
+              </h1>
+              <p className=" md:flex hidden mx-auto max-w-[700px] mt-2 mb-5 text-gray-200 md:text-xl">
+                Choose TopPro Painting for your painting projects and experience
+                unparalleled craftsmanship, attention to detail, and a
+                commitment to excellence that transforms any space. We don’t
+                just paint walls; we bring your vision to life with quality and
+                care that lasts.
+              </p>
+              <p className=" mx-auto max-w-[700px] mt-2 mb-5 text-gray-200 md:text-xl">
+                Professional painting services just a click away.
+              </p>
+              <Button
+                className=" mt-5 w-72 h-12 text-2xl motion-safe:animate-bounce rounded-none text-[white] bg-[#a8cf45] hover:bg-[#f7930f]"
+                size={"lg"}
+              >
+                <Link href="#contact">GET A FREE QUOTE</Link>
+              </Button>
+            </div>
+            <div className="p-10 hidden md:flex">
+              <Image
+                alt="1"
+                width={500}
+                height={500}
+                src={"/casa1.png"}
+              ></Image>
+            </div>
           </div>
         </section>
         <section className="w-full  py-12 md:py-24 lg:py-24 ">
@@ -144,7 +160,7 @@ export default function Component() {
           <div className="flex flex-col mt-10 px-4 md:px-64">
             <div className="grid gap-10 md:grid-cols-2 ">
               <div className="relative group">
-                <div className="overflow-hidden rounded-lg">
+                <div className="overflow-hidden ">
                   <a href="/interior">
                     <Image
                       src="/interior.jpeg"
@@ -155,19 +171,19 @@ export default function Component() {
                     />
                   </a>
                 </div>
-                <a
-                  href="/interior"
-                  className="hover:underline text-xl font-bold text-white"
-                >
-                  Interior Painting
+                <a href="/interior">
+                  <h3 className="hover:underline mt-4 text-xl font-bold text-white">
+                    Interior Painting
+                  </h3>
+
+                  <p className="text-gray-300">
+                    Transform your indoor spaces with our expert interior
+                    painting services.
+                  </p>
                 </a>
-                <p className="text-gray-300">
-                  Transform your indoor spaces with our expert interior painting
-                  services.
-                </p>
               </div>
               <div className="relative group">
-                <div className="overflow-hidden rounded-lg">
+                <div className="overflow-hidden ">
                   <a href="/exterior-painting">
                     <Image
                       src="/outside.jpeg"
@@ -189,7 +205,7 @@ export default function Component() {
                 </a>
               </div>
               <div className="relative group">
-                <div className="overflow-hidden rounded-lg">
+                <div className="overflow-hidden ">
                   <a href="/commercial-painting">
                     <Image
                       src="/comer.jpg"
@@ -210,7 +226,7 @@ export default function Component() {
                 </a>
               </div>
               <div className="relative group">
-                <div className="overflow-hidden rounded-lg">
+                <div className="overflow-hidden ">
                   <a href="/new-construction">
                     <Image
                       src="/new.jpeg"
@@ -247,7 +263,7 @@ export default function Component() {
                   src={"/area.png"}
                   fill
                   alt="areas of service"
-                  className="rounded-md object-cover"
+                  className=" object-cover"
                 />
               </AspectRatio>
             </div>
