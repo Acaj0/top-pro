@@ -33,7 +33,7 @@ export default function GuaranteePage() {
             ))}
           </section>
 
-          <section className="bg-muted rounded-lg p-8 text-center space-y-6">
+          <section className="bg-muted  rounded-none  p-8 text-center space-y-6">
             <h2 className="text-3xl font-bold text-[#004a82]">
               Ready to Experience Top-Quality Painting?
             </h2>

@@ -70,18 +70,18 @@ export default function Page() {
               <Link href="/#contact">GET A FREE QUOTE</Link>
             </Button>
           </div>
-          <div className="relative aspect-video rounded-lg overflow-hidden">
+          <div className="relative aspect-video  rounded-none overflow-hidden">
             <Image
               src="/new.jpeg"
               alt="New construction painting showcase"
               layout="fill"
               objectFit="cover"
-              className="rounded-lg"
+              className=" rounded-none"
             />
           </div>
         </section>
 
-        <section className="space-y-8 bg-[#004a82] rounded-lg p-6">
+        <section className="space-y-8 bg-[#004a82]  rounded-none p-6">
           <h2 className="text-3xl font-semibold text-center text-white">
             Why Choose Our New Construction Painting Service?
           </h2>
@@ -104,7 +104,7 @@ export default function Page() {
           </div>
         </section>
 
-        <section className="bg-muted rounded-lg p-8 space-y-4">
+        <section className="bg-muted  rounded-none p-8 space-y-4">
           <h2 className="text-3xl font-semibold text-[#004a82]">
             Our New Construction Painting Process
           </h2>

@@ -83,7 +83,7 @@ export default function ContactForm() {
             </p>
           </div>
         </div>
-        <Card className="mx-auto max-w-2xl mt-8">
+        <Card className="mx-auto max-w-2xl mt-8  rounded-none ">
           <CardHeader>
             <CardTitle>Contact Us</CardTitle>
             <CardDescription>
@@ -175,7 +175,7 @@ export default function ContactForm() {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" className="w-full bg-[#004a82] hover:bg-[#f7930f]" disabled={isLoading}>
+                <Button type="submit" className="w-full  rounded-none  bg-[#004a82] hover:bg-[#f7930f]" disabled={isLoading}>
                   {isLoading ? (
                     <>
                       <Loader2 className="mr-2 h-4 w-4 animate-spin" />

@@ -57,7 +57,7 @@ function FAQItem({ question, answer }: FAQItem) {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <Card className="mb-4">
+    <Card className="mb-4  rounded-none ">
       <CardContent className="p-0">
         <Button
           className="w-full text-left p-4 flex justify-between items-center"
