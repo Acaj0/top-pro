@@ -92,8 +92,8 @@ export default function Component() {
                 with thousands of satisfied clients.
               </p>
             </div>
-            <div className="grid grid-cols-2  gap-8 mt-16 md:px-96">
-              <Card className="text-center flex items-center justify-center outline outline-[#004a82]">
+            <div className="grid grid-cols-2   gap-8 mt-16 md:px-96">
+              <Card className="text-center  rounded-none  flex items-center justify-center outline outline-[#004a82]">
                 <CardContent className="p-6 items-center justify-center flex flex-col md:flex-row gap-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +106,7 @@ export default function Component() {
                   <h3 className="font-bold text-[#004a82]">+2000 Customers</h3>
                 </CardContent>
               </Card>
-              <Card className="text-center flex items-center justify-center outline outline-[#004a82]">
+              <Card className="text-center  rounded-none  flex items-center justify-center outline outline-[#004a82]">
                 <CardContent className="p-6 items-center justify-center flex flex-col md:flex-row gap-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +121,7 @@ export default function Component() {
                   </h3>
                 </CardContent>
               </Card>
-              <Card className="text-center flex items-center justify-center outline outline-[#004a82]">
+              <Card className="text-center rounded-none  flex items-center justify-center outline outline-[#004a82]">
                 <CardContent className="p-6 items-center justify-center flex flex-col md:flex-row gap-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +134,7 @@ export default function Component() {
                   <h3 className="font-bold text-[#004a82]">Insured</h3>
                 </CardContent>
               </Card>
-              <Card className="text-center flex items-center justify-center outline outline-[#004a82]">
+              <Card className="text-center flex  rounded-none  items-center justify-center outline outline-[#004a82]">
                 <CardContent className="p-6 items-center justify-center flex flex-col md:flex-row gap-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

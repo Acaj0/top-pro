@@ -53,7 +53,7 @@ export default function Testimonials() {
 
 function TestimonialCard({ quote, name, rating }: TestimonialCardProps) {
   return (
-    <Card>
+    <Card className=" rounded-none ">
       <CardContent className="p-6">
         <div className="flex mb-4">
           {[...Array(5)].map((_, i) => (
