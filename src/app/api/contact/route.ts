@@ -1,12 +1,14 @@
-import { NextResponse } from "next/server"
-import { Resend } from "resend"
+import { NextResponse } from "next/server";
+import { Resend } from "resend";
 
-const resend = new Resend('re_hZCSGScH_JsHFAgPQ3qkREjnqmkNRwufi')
+const apikey = process.env.RESEND_KEY;
+const resend = new Resend(apikey);
 
 export async function POST(req: Request) {
+  console.log(apikey);
   try {
-    const body = await req.json()
-    const { name, email, phone, service, message } = body
+    const body = await req.json();
+    const { name, email, phone, service, message } = body;
 
     const data = await resend.emails.send({
       from: "Top Pro Painting <onboarding@resend.dev>",
@@ -20,10 +22,13 @@ export async function POST(req: Request) {
         <p><strong>Service:</strong> ${service}</p>
         <p><strong>Message:</strong> ${message}</p>
       `,
-    })
+    });
 
-    return NextResponse.json(data)
+    return NextResponse.json(data);
   } catch (error) {
-    return NextResponse.json({ error: "Failed to send email" }, { status: 500 })
+    return NextResponse.json(
+      { error: "Failed to send email" },
+      { status: 500 }
+    );
   }
 }
