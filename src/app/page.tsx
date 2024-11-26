@@ -226,7 +226,7 @@ export default function Component() {
                 </a>
               </div>
               <div className="relative group">
-                <div className="overflow-hidden ">
+                <div className="overflow-clip ">
                   <a href="/new-construction">
                     <Image
                       src="/newc.jpg"
