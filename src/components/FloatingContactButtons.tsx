@@ -1,7 +1,7 @@
 'use client'
 import { Button } from "@/components/ui/button"
 
-export default function ContactBar({ phoneNumber = "+12392860447" }) {
+export default function ContactBar({ phoneNumber = "+12394144701" }) {
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-[#004a82] md:hidden outline outline-white p-2 flex justify-between items-center z-50">
       <Button

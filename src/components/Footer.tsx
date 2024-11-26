@@ -30,7 +30,7 @@ export default function Footer() {
               Contact Us
             </h3>
             <ul className="space-y-2 text-sm text-gray-600">
-              <li>Phone: (239) 286-0447</li>
+              <li>Phone: (239) 414-4701</li>
               <li>Email: alfredo@toppropaint.com</li>
               <li>Address: 1817 Hancock Bridge Pkwy, Cape Coral, FL 33990</li>
             </ul>
