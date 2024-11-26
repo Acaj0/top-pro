@@ -165,7 +165,7 @@ export default function Component() {
                 <div className="overflow-hidden ">
                   <a href="/interior">
                     <Image
-                      src="/interior.jpg"
+                      src="/inte.jpeg"
                       width={600}
                       height={400}
                       alt="Interior painting"

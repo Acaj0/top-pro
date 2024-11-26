@@ -76,7 +76,7 @@ export default function InteriorPaintingPage() {
           </div>
           <div className="relative aspect-video  rounded-none overflow-hidden">
             <Image
-              src="/interior.jpg"
+              src="/inte.jpeg"
               alt="Interior painting showcase"
               layout="fill"
               objectFit="cover"
