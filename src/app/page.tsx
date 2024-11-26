@@ -229,11 +229,11 @@ export default function Component() {
                 <div className="overflow-hidden ">
                   <a href="/new-construction">
                     <Image
-                      src="/new.png"
+                      src="/newc.jpg"
                       width={600}
                       height={400}
                       alt="New Construction painting"
-                      className="object-cover w-full object-top h-96 transition-transform group-hover:scale-105"
+                      className="object-cover w-full object-center h-96 transition-transform group-hover:scale-105"
                     />
                   </a>
                 </div>
