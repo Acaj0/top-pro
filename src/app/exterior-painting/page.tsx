@@ -74,7 +74,7 @@ export default function ExteriorPaintingPage() {
           </div>
           <div className="relative aspect-video  rounded-none overflow-hidden">
             <Image
-              src="/outside.jpeg"
+              src="/exterior.jpg"
               alt="Exterior painting showcase"
               layout="fill"
               objectFit="cover"

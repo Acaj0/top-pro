@@ -74,7 +74,7 @@ export default function CommercialPaintingPage() {
           </div>
           <div className="relative aspect-video  rounded-none  overflow-hidden">
             <Image
-              src="/comer.jpg"
+              src="/commercial.jpg"
               alt="Commercial painting showcase"
               layout="fill"
               objectFit="cover"

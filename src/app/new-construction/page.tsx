@@ -72,7 +72,7 @@ export default function Page() {
           </div>
           <div className="relative aspect-video  rounded-none overflow-hidden">
             <Image
-              src="/new.jpeg"
+              src="/newcons.png"
               alt="New construction painting showcase"
               layout="fill"
               objectFit="cover"

@@ -163,7 +163,7 @@ export default function Component() {
                 <div className="overflow-hidden ">
                   <a href="/interior">
                     <Image
-                      src="/interior.jpeg"
+                      src="/interior.jpg"
                       width={600}
                       height={400}
                       alt="Interior painting"
@@ -186,7 +186,7 @@ export default function Component() {
                 <div className="overflow-hidden ">
                   <a href="/exterior-painting">
                     <Image
-                      src="/outside.jpeg"
+                      src="/exterior.jpg"
                       width={600}
                       height={400}
                       alt="Exterior painting"
@@ -208,7 +208,7 @@ export default function Component() {
                 <div className="overflow-hidden ">
                   <a href="/commercial-painting">
                     <Image
-                      src="/comer.jpg"
+                      src="/commercial.jpg"
                       width={600}
                       height={400}
                       alt="Commercial painting"
@@ -229,11 +229,11 @@ export default function Component() {
                 <div className="overflow-hidden ">
                   <a href="/new-construction">
                     <Image
-                      src="/new.jpeg"
+                      src="/newcons.png"
                       width={600}
                       height={400}
                       alt="New Construction painting"
-                      className="object-cover w-full h-96 transition-transform group-hover:scale-105"
+                      className="object-cover w-full object-top h-96 transition-transform group-hover:scale-105"
                     />
                   </a>
                 </div>
