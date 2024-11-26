@@ -8,6 +8,7 @@ import Faq from "@/components/Faq";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import ContactForm from "@/components/Contact-form";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
+import { PartnerSection } from "@/components/PartnerSection";
 
 export default function Component() {
   const common = { alt: "Art Direction Example", sizes: "100vw" };
@@ -76,7 +77,8 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="w-full  py-12 md:py-24 lg:py-24 ">
+
+        <section className="w-full  pb-12 pt-2 md:py-24 lg:pt-8 ">
           <div className="flex flex-col px-4 md:px-6">
             <div className="text-center space-y-4">
               <h2 className="text-2xl font-bold sm:text-3xl text-[#004a82]">
@@ -252,6 +254,7 @@ export default function Component() {
         </section>
         <section className="items-center w-screen flex" id="testimonials">
           <div className="w-full items-center justify-center">
+            <PartnerSection />
             <Testimonials></Testimonials>
           </div>
         </section>

@@ -9,7 +9,7 @@ interface TestimonialCardProps {
 
 export default function Testimonials() {
   return (
-    <div className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 items-center justify-center">
+    <div className="w-full pb-12 pt-10 md:pb-24 lg:pb-32 bg-gray-100 items-center justify-center">
       <div className="flex flex-col items-center justify-center px-4 md:px-6">
         <h2 className="text-3xl font-bold text-[#004a82] sm:text-4xl md:text-5xl text-center mb-12">
           See What Our Customers Say About Us
