@@ -229,7 +229,7 @@ export default function Component() {
                 <div className="overflow-hidden ">
                   <a href="/new-construction">
                     <Image
-                      src="/newcons.png"
+                      src="/new.png"
                       width={600}
                       height={400}
                       alt="New Construction painting"
