@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { useRouter } from "next/navigation"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
@@ -27,6 +28,7 @@ const formSchema = z.object({
 export default function ContactForm() {
   const [isLoading, setIsLoading] = useState(false)
   const { toast } = useToast()
+  const router = useRouter()
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -50,6 +52,8 @@ export default function ContactForm() {
         body: JSON.stringify(values),
       })
 
+      const data = await response.json()
+
       if (!response.ok) {
         throw new Error("Failed to send message")
       }
@@ -58,7 +62,13 @@ export default function ContactForm() {
         title: "Success!",
         description: "Your message has been sent. We'll get back to you soon!",
       })
+
       form.reset()
+
+      // Redirect to thank you page
+      if (data.redirectUrl) {
+        router.push(data.redirectUrl)
+      }
     } catch (error) {
       toast({
         title: "Error",
@@ -83,12 +93,10 @@ export default function ContactForm() {
             </p>
           </div>
         </div>
-        <Card className="mx-auto max-w-2xl mt-8  rounded-none ">
+        <Card className="mx-auto max-w-2xl mt-8 rounded-none">
           <CardHeader>
             <CardTitle>Contact Us</CardTitle>
-            <CardDescription>
-              Please provide your details and we'll contact you shortly.
-            </CardDescription>
+            <CardDescription>Please provide your details and we'll contact you shortly.</CardDescription>
           </CardHeader>
           <CardContent>
             <Form {...form}>
@@ -165,17 +173,17 @@ export default function ContactForm() {
                     <FormItem>
                       <FormLabel>Message</FormLabel>
                       <FormControl>
-                        <Textarea
-                          placeholder="Tell us about your project..."
-                          className="min-h-[120px]"
-                          {...field}
-                        />
+                        <Textarea placeholder="Tell us about your project..." className="min-h-[120px]" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
                   )}
                 />
-                <Button type="submit" className="w-full  rounded-none  bg-[#004a82] hover:bg-[#f7930f]" disabled={isLoading}>
+                <Button
+                  type="submit"
+                  className="w-full rounded-none bg-[#004a82] hover:bg-[#f7930f]"
+                  disabled={isLoading}
+                >
                   {isLoading ? (
                     <>
                       <Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -193,3 +201,4 @@ export default function ContactForm() {
     </section>
   )
 }
+
